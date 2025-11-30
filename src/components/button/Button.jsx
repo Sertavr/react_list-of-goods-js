@@ -16,18 +16,11 @@ export const Button = ({
       sortField === nameField ? className : `${className} is-light`;
   }
 
-  const styleForReset = {};
-
-  if (!sortField && !isReversed && nameField === 'Reset') {
-    styleForReset.display = 'none';
-  }
-
   return (
     <button
       type="button"
       className={classNameButton}
       onClick={() => handleClick(nameField)}
-      style={styleForReset}
     >
       {nameField}
     </button>
