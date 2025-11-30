@@ -8,7 +8,7 @@ export const App = () => {
   const [sortField, setSortField] = useState('');
   const [isReversed, setReversed] = useState(false);
 
-  const clickHandler = sortType => {
+  const handleClick = sortType => {
     switch (sortType) {
       case 'Sort alphabetically':
       case 'Sort by length':
@@ -57,7 +57,7 @@ export const App = () => {
       <Buttons
         buttonClassesFields={buttonClassesFields}
         sortField={sortField}
-        clickHandler={clickHandler}
+        handleClick={handleClick}
         isReversed={isReversed}
       />
       <List goods={goods} />

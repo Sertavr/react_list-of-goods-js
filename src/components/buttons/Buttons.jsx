@@ -3,7 +3,7 @@ import { Button } from '../button/Button';
 export const Buttons = ({
   buttonClassesFields,
   sortField,
-  clickHandler,
+  handleClick,
   isReversed,
 }) => (
   <div className="buttons">
@@ -18,7 +18,7 @@ export const Buttons = ({
           isReversed={isReversed}
           className={className}
           nameField={nameField}
-          clickHandler={clickHandler}
+          handleClick={handleClick}
           key={nameField}
         />
       );

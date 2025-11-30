@@ -5,7 +5,7 @@ export const Button = ({
   isReversed,
   nameField,
   sortField,
-  clickHandler,
+  handleClick,
 }) => {
   let classNameButton;
 
@@ -26,7 +26,7 @@ export const Button = ({
     <button
       type="button"
       className={classNameButton}
-      onClick={() => clickHandler(nameField)}
+      onClick={() => handleClick(nameField)}
       style={styleForReset}
     >
       {nameField}
